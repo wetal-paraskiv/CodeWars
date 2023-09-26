@@ -2,6 +2,7 @@
 import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -261,6 +262,11 @@ public class Main {
    private static int recursiveFibonacci(int n) {
       if (n < 2) return n;
       return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2);
+   }
+
+   public static List<String> top3(String s) {
+      // Your code here
+      return null;
    }
 
    public static void main(String[] args) {
