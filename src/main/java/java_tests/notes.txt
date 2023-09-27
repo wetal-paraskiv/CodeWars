@@ -1,0 +1,11 @@
+ArrayList is an ordered collection, and it maintains the insertion order.
+
+A method-local inner class can be abstract
+
+X run = new X(); Thread t = new Thread(run); t.start();
+
+If a switch block has no default, adding an assert default is considered appropriate.
+
+An anonymous inner class can extend exactly one class or implement exactly one interface.
+
+The notifyAll() method must be called from a synchronized context.

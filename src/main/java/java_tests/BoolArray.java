@@ -1,4 +1,10 @@
+package java_tests;
+
 class BoolArray {
+   /*
+   * The reference variables b and x both refer to the same boolean array. count is incremented for each call to the set() method,
+   * and once again when the first if test is true. Because of the && short circuit operator, count is not incremented during the second if test.
+   * */
    boolean[] b = new boolean[3];
    int count = 0;
 

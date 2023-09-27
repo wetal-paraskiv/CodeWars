@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class Main {
+public class CodeWars {
 
    public static String getMiddle(String word) {
       int index = word.length() / 2;

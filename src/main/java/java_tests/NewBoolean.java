@@ -1,11 +1,6 @@
-import java.io.EOFException;
-import java.io.FileNotFoundException;
+package java_tests;
 
-public class A {
-   public A() /* Line 3 */ {
-      System.out.println("Class A");
-   }
-
+public class NewBoolean {
    public static void main(String[] args) {
       int result = 0;
 
