@@ -9,3 +9,9 @@ If a switch block has no default, adding an assert default is considered appropr
 An anonymous inner class can extend exactly one class or implement exactly one interface.
 
 The notifyAll() method must be called from a synchronized context.
+
+decimal to binary: divide by to 2 and write the remainder from right to left, continue with quotient.
+
+binary to decimal: sum of each digit (digit * 2 ^ power = the reverse index of binary digit starting with 0)
+
+default access is the "package oriented" access modifier.
