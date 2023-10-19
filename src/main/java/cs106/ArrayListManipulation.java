@@ -3,11 +3,12 @@ package cs106;
 import java.util.ArrayList;
 
 public class ArrayListManipulation {
+
     public static void main(String[] args) {
         arrayListExample();
     }
-    public static void arrayListExample() {
 
+    public static void arrayListExample() {
         // ArrayList holds only Non-primitive types (objects)!
         // in this case we use class wrapper Integer (Double, Boolean, Character)
         ArrayList<Integer> intList = new ArrayList<Integer>();

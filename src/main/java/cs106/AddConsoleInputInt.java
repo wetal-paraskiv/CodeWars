@@ -3,6 +3,12 @@ package cs106;
 import java.util.Scanner;
 
 public class AddConsoleInputInt {
+
+    public static void main(String[] args) {
+        AddConsoleInputInt addConsoleInputInt = new AddConsoleInputInt();
+        addConsoleInputInt.run();
+    }
+
     Scanner scan = new Scanner(System.in);
 
     private static final int SENTINEL = 0;

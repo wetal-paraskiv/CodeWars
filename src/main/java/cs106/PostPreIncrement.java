@@ -1,7 +1,10 @@
 package cs106;
 
 public class PostPreIncrement {
-    public void run() {
+    public static void main(String[] args) {
+        run();
+    }
+    public static void run() {
         int a = 5;
         int b = 5;
         System.out.println("a = 5; b = 5;");
