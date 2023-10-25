@@ -3,21 +3,33 @@ package sorting_algorithms;
 import java.util.Arrays;
 
 public class QuickSort {
+    /* It is a divide-and-conquer algorithm.
+    * Advantages:
+    * It is efficient on large data sets.
+    * It has a low overhead, as it only requires a small amount of memory to function.
+    *
+    * Disadvantages:
+    * It has a worst-case time complexity of O(N2), which occurs when the pivot is chosen poorly.
+    * It is not a good choice for small data sets.
+    * It is not a stable sort, meaning that if two elements have the same key, their relative order will not be preserved
+    * in the sorted output in case of quick sort, because here we are swapping elements according to the pivot’s position
+    * (without considering their original positions).
+    * */
 
     public static void main(String[] args) {
 
-        int[] arr = {5, 9, 2, 11, 14, 6, 3, 8};
-//        int[] arr = {2, 1, 3};
+//        int[] arr = {5, 9, 2, 11, 14, 6, 3, 8};
+        int[] arr = {2, 1, 3};
         System.out.println("Unsorted array: " + Arrays.toString(arr));
         System.out.println("  Sorted array: " + Arrays.toString(quicksort(arr, 0, arr.length - 1)));
     }
 
     public static int[] quicksort(int[] arr, int start, int end) {
         if (arr != null) {
-            if(arr.length <= 1) {
+            if (arr.length <= 1) {
                 return arr;
             }
-            if (start < end) {
+            if (start < end) { // these actions will continue only to valid array
                 int pivotIndex = partition(arr, start, end);
                 quicksort(arr, start, pivotIndex - 1);
                 quicksort(arr, pivotIndex + 1, end);

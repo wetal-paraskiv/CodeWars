@@ -1,6 +1,11 @@
 package sorting_algorithms;
 
 public class BubbleSort {
+    /*
+    * Bubble Sort is the simplest sorting algorithm
+    * that works by repeatedly swapping the adjacent elements if they are in the wrong order.
+    * This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
+    */
     public static void main(String[] args) {
 //        int[] unsorted = {6, 4, 5, 3, 2, 1};
         int[] unsorted = {64, 34, 25, 12, 22, 11, 90};
