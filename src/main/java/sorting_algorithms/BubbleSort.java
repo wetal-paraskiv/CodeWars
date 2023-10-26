@@ -1,5 +1,7 @@
 package sorting_algorithms;
 
+import java.util.Arrays;
+
 public class BubbleSort {
     /*
     * Bubble Sort is the simplest sorting algorithm
@@ -9,8 +11,7 @@ public class BubbleSort {
     public static void main(String[] args) {
 //        int[] unsorted = {6, 4, 5, 3, 2, 1};
         int[] unsorted = {64, 34, 25, 12, 22, 11, 90};
-        int[] sortedArray = bubbleSort(unsorted);
-        printArray(sortedArray);
+        System.out.println(Arrays.toString(bubbleSort(unsorted)));
     }
 
     public static int[] bubbleSort(int[] arr) {
@@ -28,10 +29,5 @@ public class BubbleSort {
             -- end;
         }
         return arr;
-    }
-
-    static void printArray(int[] arr) {
-        for (int i : arr) System.out.print(i + " ");
-        System.out.println();
     }
 }

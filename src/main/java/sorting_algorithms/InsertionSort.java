@@ -11,13 +11,13 @@ public class InsertionSort {
     private static int[] insertionSort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             int key = arr[i];
-            int previous = i - 1;
+            int prevIndex = i - 1;
 
-            while (previous >= 0 && arr[previous] > key) {
-                arr[previous + 1] = arr[previous];
-                previous = previous - 1;
+            while (prevIndex >= 0 && arr[prevIndex] > key) {
+                arr[prevIndex + 1] = arr[prevIndex];
+                prevIndex = prevIndex - 1;
             }
-            arr[previous + 1] = key;
+            arr[prevIndex + 1] = key;
         }
         return arr;
     }
